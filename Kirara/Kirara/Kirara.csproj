@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDDD42BF-8898-41BD-8B1F-A4F4BD006745}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Charlotte</RootNamespace>
+    <AssemblyName>Kirara</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AudioVideoExtensions.cs" />
+    <Compile Include="BgConvInfo.cs" />
+    <Compile Include="BgConvWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BgConvWin.Designer.cs">
+      <DependentUpon>BgConvWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusyDlg.Designer.cs">
+      <DependentUpon>BusyDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Conv.cs" />
+    <Compile Include="DispMonitorNoMainWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispMonitorNoMainWin.Designer.cs">
+      <DependentUpon>DispMonitorNoMainWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispMonitorNoWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispMonitorNoWin.Designer.cs">
+      <DependentUpon>DispMonitorNoWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFmpeg.cs" />
+    <Compile Include="GlobalProcMtx.cs" />
+    <Compile Include="Ground.cs" />
+    <Compile Include="MainWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWin.Designer.cs">
+      <DependentUpon>MainWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaInfo.cs" />
+    <Compile Include="Monitors.cs" />
+    <Compile Include="PlayListWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayListWin.Designer.cs">
+      <DependentUpon>PlayListWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenSizeWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenSizeWin.Designer.cs">
+      <DependentUpon>ScreenSizeWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMonitorDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMonitorDlg.Designer.cs">
+      <DependentUpon>SelectMonitorDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingDlg.Designer.cs">
+      <DependentUpon>SettingDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestWin.Designer.cs">
+      <DependentUpon>TestWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ApprovalSection.cs" />
+    <Compile Include="Tools\ArgsReader.cs" />
+    <Compile Include="Tools\ArrayTools.cs" />
+    <Compile Include="Tools\AutoTable.cs" />
+    <Compile Include="Tools\BinaryTools.cs" />
+    <Compile Include="Tools\Bmp.cs" />
+    <Compile Include="Tools\Cancelled.cs" />
+    <Compile Include="Tools\Completed.cs" />
+    <Compile Include="Tools\CsvFile.cs" />
+    <Compile Include="Tools\DateTimeToSec.cs" />
+    <Compile Include="Tools\DateToDay.cs" />
+    <Compile Include="Tools\DoubleTools.cs" />
+    <Compile Include="Tools\Ended.cs" />
+    <Compile Include="Tools\EnterLeave.cs" />
+    <Compile Include="Tools\ExceptionCarrier.cs" />
+    <Compile Include="Tools\ExtraTools.cs" />
+    <Compile Include="Tools\FailedOperation.cs" />
+    <Compile Include="Tools\FieldsSerializer.cs" />
+    <Compile Include="Tools\FileTools.cs" />
+    <Compile Include="Tools\IntTools.cs" />
+    <Compile Include="Tools\JString.cs" />
+    <Compile Include="Tools\Logger.cs" />
+    <Compile Include="Tools\LongTools.cs" />
+    <Compile Include="Tools\MathTools.cs" />
+    <Compile Include="Tools\MutexObject.cs" />
+    <Compile Include="Tools\NamedEventObject.cs" />
+    <Compile Include="Tools\NamedEventPair.cs" />
+    <Compile Include="Tools\Nectar2.cs" />
+    <Compile Include="Tools\OperationCenter.cs" />
+    <Compile Include="Tools\PostBox.cs" />
+    <Compile Include="Tools\PostQueue.cs" />
+    <Compile Include="Tools\ProcessTools.cs" />
+    <Compile Include="Tools\Rect.cs" />
+    <Compile Include="Tools\RectTable.cs" />
+    <Compile Include="Tools\ReflecTools.cs" />
+    <Compile Include="Tools\SecurityTools.cs" />
+    <Compile Include="Tools\SortedList.cs" />
+    <Compile Include="Tools\StringTools.cs" />
+    <Compile Include="Tools\ThreadCenter.cs" />
+    <Compile Include="Tools\WorkingDir.cs" />
+    <Compile Include="Tools\XNode.cs" />
+    <Compile Include="Tools\XYPoint.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WavMaster.cs" />
+    <EmbeddedResource Include="BgConvWin.resx">
+      <DependentUpon>BgConvWin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusyDlg.resx">
+      <DependentUpon>BusyDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispMonitorNoMainWin.resx">
+      <DependentUpon>DispMonitorNoMainWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispMonitorNoWin.resx">
+      <DependentUpon>DispMonitorNoWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWin.resx">
+      <DependentUpon>MainWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayListWin.resx">
+      <DependentUpon>PlayListWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ScreenSizeWin.resx">
+      <DependentUpon>ScreenSizeWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMonitorDlg.resx">
+      <DependentUpon>SelectMonitorDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingDlg.resx">
+      <DependentUpon>SettingDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestWin.resx">
+      <DependentUpon>TestWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

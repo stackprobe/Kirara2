@@ -1,0 +1,3 @@
+Etcetera\DatStrings.txt
+Etcetera\JChar.bin
+Resource\Font\RiiT_F.otf
