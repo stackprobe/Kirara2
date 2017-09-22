@@ -517,7 +517,7 @@ namespace Charlotte
 			else // ? エラーった。
 			{
 				mi.status = Consts.MediaStatus_e.ERROR;
-				mi.errorMessage = Gnd.i.conv.errorMessage;
+				mi.errorMessage = conv.errorMessage;
 			}
 		}
 
