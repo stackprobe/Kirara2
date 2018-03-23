@@ -47,12 +47,12 @@ namespace Charlotte.Tools
 			ArrayTools.sort<T>(_list, _comp);
 		}
 
-		public bool contains(T ferret)
+		public bool contains(T target)
 		{
-			return indexOf(ferret) != -1;
+			return indexOf(target) != -1;
 		}
 
-		public int indexOf(T ferret)
+		public int indexOf(T target)
 		{
 			sortIfNeed();
 
@@ -62,7 +62,7 @@ namespace Charlotte.Tools
 			while (l + 1 < r)
 			{
 				int m = (l + r) / 2;
-				int ret = _comp(_list[m], ferret);
+				int ret = _comp(_list[m], target);
 
 				if (ret < 0)
 				{
@@ -80,7 +80,7 @@ namespace Charlotte.Tools
 			return -1; // not found
 		}
 
-		public int leftIndexOf(T ferret)
+		public int leftIndexOf(T target)
 		{
 			sortIfNeed();
 
@@ -90,7 +90,7 @@ namespace Charlotte.Tools
 			while (l < r)
 			{
 				int m = (l + r) / 2;
-				int ret = _comp(_list[m], ferret);
+				int ret = _comp(_list[m], target);
 
 				if (ret < 0)
 				{
@@ -104,7 +104,7 @@ namespace Charlotte.Tools
 			return l;
 		}
 
-		public int rightIndexOf(T ferret)
+		public int rightIndexOf(T target)
 		{
 			sortIfNeed();
 
@@ -114,7 +114,7 @@ namespace Charlotte.Tools
 			while (l < r)
 			{
 				int m = (l + r + 1) / 2;
-				int ret = _comp(_list[m], ferret);
+				int ret = _comp(_list[m], target);
 
 				if (0 < ret)
 				{
@@ -128,13 +128,13 @@ namespace Charlotte.Tools
 			return r;
 		}
 
-		public List<T> getMatch(T ferret)
+		public List<T> getMatch(T target)
 		{
 			//sortIfNeed(); // -> leftIndexOf
 
 			List<T> dest = new List<T>();
 
-			for (int index = leftIndexOf(ferret); index <= rightIndexOf(ferret); index++)
+			for (int index = leftIndexOf(target); index <= rightIndexOf(target); index++)
 			{
 				dest.Add(_list[index]);
 			}
