@@ -1,171 +1,171 @@
 ===============================================================================
 
-@Kirara (“®‰æƒvƒŒƒCƒ„ŽŽì)
+ã€€Kirara (å‹•ç”»ãƒ—ãƒ¬ã‚¤ãƒ¤è©¦ä½œ)
 
 ===============================================================================
 
 
-¡ƒ\ƒtƒg‚ÌŠT—v
+â– ã‚½ãƒ•ãƒˆã®æ¦‚è¦
 
-@“®‰æƒvƒŒƒCƒ„‚ÌŽŽì”Å‚Å‚·B
-@FX‚Æ“ï‚ª‚ ‚è‚Ü‚·‚ªA‚¢‚¿‚¨‚¤“®‰æƒvƒŒƒCƒ„‚Æ‚µ‚Ä‹@”\‚µ‚Ü‚·B
+ã€€å‹•ç”»ãƒ—ãƒ¬ã‚¤ãƒ¤ã®è©¦ä½œç‰ˆã§ã™ã€‚
+ã€€è‰²ã€…ã¨é›£ãŒã‚ã‚Šã¾ã™ãŒã€ã„ã¡ãŠã†å‹•ç”»ãƒ—ãƒ¬ã‚¤ãƒ¤ã¨ã—ã¦æ©Ÿèƒ½ã—ã¾ã™ã€‚
 
-@ogv, ogg Œ`Ž®‚µ‚©Ä¶o—ˆ‚Ü‚¹‚ñB
-@mp4, mp3 ‚È‚Ç‚»‚êˆÈŠO‚Ì“®‰æE‰¹ŠyŒ`Ž®‚É‚à‘Î‰ž‚µ‚Ä‚¢‚Ü‚·‚ªA
-@Ä¶‘O‚É(“à•”“I‚É) ogX Œ`Ž®‚É•ÏŠ·‚·‚éˆ—‚ª“ü‚é‚½‚ßAÄ¶ŠJŽn‚Ü‚ÅŽžŠÔ‚ªŠ|‚©‚è‚Ü‚·B
+ã€€ogv, ogg å½¢å¼ã—ã‹å†ç”Ÿå‡ºæ¥ã¾ã›ã‚“ã€‚
+ã€€mp4, mp3 ãªã©ãã‚Œä»¥å¤–ã®å‹•ç”»ãƒ»éŸ³æ¥½å½¢å¼ã«ã‚‚å¯¾å¿œã—ã¦ã„ã¾ã™ãŒã€
+ã€€å†ç”Ÿå‰ã«(å†…éƒ¨çš„ã«) ogX å½¢å¼ã«å¤‰æ›ã™ã‚‹å‡¦ç†ãŒå…¥ã‚‹ãŸã‚ã€å†ç”Ÿé–‹å§‹ã¾ã§æ™‚é–“ãŒæŽ›ã‹ã‚Šã¾ã™ã€‚
 
 
-@š“–ƒ\ƒtƒg‚Í ffmpeg ‚ðŽg—p‚µ‚Ü‚·B(ŠO•”ƒRƒ}ƒ“ƒh‚Æ‚µ‚ÄŒÄ‚Ño‚µ‚Ü‚·)
-@@“–ƒ\ƒtƒgŽg—p‘O‚É ffmpeg ‚ð“±“ü‚µ‚Ä‚¢‚½‚¾‚­•K—v‚ª‚ ‚è‚Ü‚·B
+ã€€â˜…å½“ã‚½ãƒ•ãƒˆã¯ ffmpeg ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚(å¤–éƒ¨ã‚³ãƒžãƒ³ãƒ‰ã¨ã—ã¦å‘¼ã³å‡ºã—ã¾ã™)
+ã€€ã€€å½“ã‚½ãƒ•ãƒˆä½¿ç”¨å‰ã« ffmpeg ã‚’å°Žå…¥ã—ã¦ã„ãŸã ãå¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
 
-¡“®ìŠÂ‹«
+â– å‹•ä½œç’°å¢ƒ
 
-@Windows 10
-@Šm”F‚µ‚Ä‚¢‚Ü‚¹‚ñ‚ª Windows 7/8/8.1 ‚Å‚à“®‚­‚©‚à‚µ‚ê‚Ü‚¹‚ñB
+ã€€Windows 10
+ã€€ç¢ºèªã—ã¦ã„ã¾ã›ã‚“ãŒ Windows 7/8/8.1 ã§ã‚‚å‹•ãã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚
 
-@.NET Framework 4 ‚ðŽg—p‚µ‚Ü‚·B
+ã€€.NET Framework 4 ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@DirectX 9.0 ˆÈ~
+ã€€DirectX 9.0 ä»¥é™
 
 
-¡ƒCƒ“ƒXƒg[ƒ‹•û–@
+â– ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•
 
-@ƒA[ƒJƒCƒu‚Ì’†g‚ðƒ[ƒJƒ‹ƒfƒBƒXƒNã‚Ì”CˆÓ‚ÌêŠ‚ÉƒRƒs[‚µ‚Ä‰º‚³‚¢B
+ã€€ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã®ä¸­èº«ã‚’ãƒ­ãƒ¼ã‚«ãƒ«ãƒ‡ã‚£ã‚¹ã‚¯ä¸Šã®ä»»æ„ã®å ´æ‰€ã«ã‚³ãƒ”ãƒ¼ã—ã¦ä¸‹ã•ã„ã€‚
 
 
-¡ƒAƒ“ƒCƒ“ƒXƒg[ƒ‹•û–@
+â– ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•
 
-@ƒŒƒWƒXƒgƒŠ‚È‚Ç‚ÍˆêØŽg‚Á‚Ä‚¢‚Ü‚¹‚ñB
-@ƒtƒ@ƒCƒ‹‚ðíœ‚·‚é‚¾‚¯‚ÅƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚Å‚«‚Ü‚·B
+ã€€ãƒ¬ã‚¸ã‚¹ãƒˆãƒªãªã©ã¯ä¸€åˆ‡ä½¿ã£ã¦ã„ã¾ã›ã‚“ã€‚
+ã€€ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã™ã‚‹ã ã‘ã§ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã§ãã¾ã™ã€‚
 
 
-¡ffmpeg“±“ü•û–@
+â– ffmpegå°Žå…¥æ–¹æ³•
 
-@1. ƒuƒ‰ƒEƒU‚©‚ç https://ffmpeg.org/ ‚ðŠJ‚¢‚Ä‰º‚³‚¢B
+ã€€1. ãƒ–ãƒ©ã‚¦ã‚¶ã‹ã‚‰ https://ffmpeg.org/ ã‚’é–‹ã„ã¦ä¸‹ã•ã„ã€‚
 
-@2. ƒy[ƒW¶‘¤‚Ìƒƒjƒ…[‚Ì Download ‚ðƒNƒŠƒbƒN‚µ‚Ä‰º‚³‚¢B
+ã€€2. ãƒšãƒ¼ã‚¸å·¦å´ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã® Download ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ä¸‹ã•ã„ã€‚
 
-@3. Get the packages ‚Ì Windows ‚ÌƒƒS‚ÉƒJ[ƒ\ƒ‹‚ð‡‚í‚¹A
-@   Windows Packages ‚Ì Windows Builds ‚ðƒNƒŠƒbƒN‚µ‚Ä‰º‚³‚¢B
+ã€€3. Get the packages ã® Windows ã®ãƒ­ã‚´ã«ã‚«ãƒ¼ã‚½ãƒ«ã‚’åˆã‚ã›ã€
+ã€€   Windows Packages ã® Windows Builds ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ä¸‹ã•ã„ã€‚
 
-@4. Version ‚Ì 3.2.4 ‚ð‘I‘ð‚µ‚Ä‰º‚³‚¢B(3.2.4 ‚ª–³‚¢ê‡‚ÍAÅV‚ÌˆÀ’è”Å‚ð‘I‘ð)
+ã€€4. Version ã® 3.2.4 ã‚’é¸æŠžã—ã¦ä¸‹ã•ã„ã€‚(3.2.4 ãŒç„¡ã„å ´åˆã¯ã€æœ€æ–°ã®å®‰å®šç‰ˆã‚’é¸æŠž)
 
-@5. Architecture ‚Ì 32-bit ‚Ü‚½‚Í 64-bit ‚ðu“±“üŠÂ‹«‚É‡‚í‚¹‚Äv‘I‘ð‚µ‚Ä‰º‚³‚¢B
-@   ‚æ‚­‚í‚©‚ç‚È‚¢ê‡‚Í 32-bit ‚ð‘I‘ð‚µ‚Ä‰º‚³‚¢B
+ã€€5. Architecture ã® 32-bit ã¾ãŸã¯ 64-bit ã‚’ã€Œå°Žå…¥ç’°å¢ƒã«åˆã‚ã›ã¦ã€é¸æŠžã—ã¦ä¸‹ã•ã„ã€‚
+ã€€   ã‚ˆãã‚ã‹ã‚‰ãªã„å ´åˆã¯ 32-bit ã‚’é¸æŠžã—ã¦ä¸‹ã•ã„ã€‚
 
-@6. Linking ‚Ì Shared ‚ð‘I‘ð‚µ‚Ä‰º‚³‚¢B(Static ‚Å‚à OK ‚Å‚·)
+ã€€6. Linking ã® Shared ã‚’é¸æŠžã—ã¦ä¸‹ã•ã„ã€‚(Static ã§ã‚‚ OK ã§ã™)
 
-@7. Download FFmpeg ‚ðƒNƒŠƒbƒN‚µ‚Ä .zip ƒtƒ@ƒCƒ‹‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä‰º‚³‚¢B
+ã€€7. Download FFmpeg ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ .zip ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¦ä¸‹ã•ã„ã€‚
 
-@8. ƒ_ƒEƒ“ƒ[ƒh‚µ‚½ .zip ‚ð”CˆÓ‚ÌêŠ‚É“WŠJ‚µ‚Ä‰º‚³‚¢B
-@   “WŠJæ‚ÌƒpƒX‚ÍŒã‚ÅŽg—p‚·‚é‚Ì‚ÅAŠo‚¦‚Ä‚¨‚¢‚Ä‰º‚³‚¢B
+ã€€8. ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸ .zip ã‚’ä»»æ„ã®å ´æ‰€ã«å±•é–‹ã—ã¦ä¸‹ã•ã„ã€‚
+ã€€   å±•é–‹å…ˆã®ãƒ‘ã‚¹ã¯å¾Œã§ä½¿ç”¨ã™ã‚‹ã®ã§ã€è¦šãˆã¦ãŠã„ã¦ä¸‹ã•ã„ã€‚
 
 
-@š‚±‚ÌŽè‡‚Í 2017/3/13 ‚Éì¬‚µ‚Ü‚µ‚½B
+ã€€â˜…ã“ã®æ‰‹é †ã¯ 2017/3/13 ã«ä½œæˆã—ã¾ã—ãŸã€‚
 
-@šŠJ”­EƒeƒXƒgŠÂ‹«‚Å‚Í ffmpeg-3.2.4-win64-shared.zip ‚ðŽg—p‚µ‚Ä‚¢‚Ü‚·B
+ã€€â˜…é–‹ç™ºãƒ»ãƒ†ã‚¹ãƒˆç’°å¢ƒã§ã¯ ffmpeg-3.2.4-win64-shared.zip ã‚’ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚
 
-@šŠJ”­EƒeƒXƒgŠÂ‹«‚Å‚Í C:\app\ffmpeg-3.2.4-win64-shared ‚É“WŠJ‚µ‚Ü‚µ‚½B
+ã€€â˜…é–‹ç™ºãƒ»ãƒ†ã‚¹ãƒˆç’°å¢ƒã§ã¯ C:\app\ffmpeg-3.2.4-win64-shared ã«å±•é–‹ã—ã¾ã—ãŸã€‚
 
 
-¡‹N“®•û–@
+â– èµ·å‹•æ–¹æ³•
 
-@Kirara.exe ‚ðŽÀs‚µ‚Ä‰º‚³‚¢B
+ã€€Kirara.exe ã‚’å®Ÿè¡Œã—ã¦ä¸‹ã•ã„ã€‚
 
 
-¡Šî–{“I‚ÈŽg‚¢•û
+â– åŸºæœ¬çš„ãªä½¿ã„æ–¹
 
-@œ•’Ê‚É mp4 mp3 ‚È‚Ç‚ðÄ¶‚·‚é
+ã€€â—æ™®é€šã« mp4 mp3 ãªã©ã‚’å†ç”Ÿã™ã‚‹
 
-@@1. ƒvƒŒƒCƒŠƒXƒg‚É“®‰æE‰¹Šyƒtƒ@ƒCƒ‹‚ðƒhƒ‰ƒbƒOEƒAƒ“ƒhEƒhƒƒbƒv‚·‚éB
+ã€€ã€€1. ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆã«å‹•ç”»ãƒ»éŸ³æ¥½ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‰ãƒ©ãƒƒã‚°ãƒ»ã‚¢ãƒ³ãƒ‰ãƒ»ãƒ‰ãƒ­ãƒƒãƒ—ã™ã‚‹ã€‚
 
-@@2. •ÏŠ·‚ªI‚í‚é‚Ü‚Å‘Ò‚ÂB
+ã€€ã€€2. å¤‰æ›ãŒçµ‚ã‚ã‚‹ã¾ã§å¾…ã¤ã€‚
 
-@@3. •ÏŠ·‚ªI‚í‚Á‚½‚çÄ¶‚·‚éB
+ã€€ã€€3. å¤‰æ›ãŒçµ‚ã‚ã£ãŸã‚‰å†ç”Ÿã™ã‚‹ã€‚
 
 
-@œŽ–‘O‚É ogX Œ`Ž®‚É•ÏŠ·‚µ‚Ä‚©‚çÄ¶‚·‚é
+ã€€â—äº‹å‰ã« ogX å½¢å¼ã«å¤‰æ›ã—ã¦ã‹ã‚‰å†ç”Ÿã™ã‚‹
 
-@@1. ƒRƒ“ƒo[ƒg / ƒRƒ“ƒo[ƒg‚·‚éƒtƒ@ƒCƒ‹‚ð’Ç‰Á(A) ‚ðŠJ‚­B
+ã€€ã€€1. ã‚³ãƒ³ãƒãƒ¼ãƒˆ / ã‚³ãƒ³ãƒãƒ¼ãƒˆã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è¿½åŠ (A) ã‚’é–‹ãã€‚
 
-@@2. Conversion Dialog ‚É“®‰æE‰¹Šyƒtƒ@ƒCƒ‹‚ðƒhƒ‰ƒbƒOEƒAƒ“ƒhEƒhƒƒbƒv‚·‚éB
+ã€€ã€€2. Conversion Dialog ã«å‹•ç”»ãƒ»éŸ³æ¥½ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‰ãƒ©ãƒƒã‚°ãƒ»ã‚¢ãƒ³ãƒ‰ãƒ»ãƒ‰ãƒ­ãƒƒãƒ—ã™ã‚‹ã€‚
 
-@@3. •ÏŠ·‚ªI‚í‚é‚Ü‚Å‘Ò‚ÂB
+ã€€ã€€3. å¤‰æ›ãŒçµ‚ã‚ã‚‹ã¾ã§å¾…ã¤ã€‚
 
-@@4. •ÏŠ·‚³‚ê‚½ ogX Œ`Ž®‚Ìƒtƒ@ƒCƒ‹‚ðƒvƒŒƒCƒŠƒXƒg‚Éƒhƒ‰ƒbƒOEƒAƒ“ƒhEƒhƒƒbƒv‚µ‚ÄÄ¶‚·‚éB
+ã€€ã€€4. å¤‰æ›ã•ã‚ŒãŸ ogX å½¢å¼ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆã«ãƒ‰ãƒ©ãƒƒã‚°ãƒ»ã‚¢ãƒ³ãƒ‰ãƒ»ãƒ‰ãƒ­ãƒƒãƒ—ã—ã¦å†ç”Ÿã™ã‚‹ã€‚
 
 
-¡‚»‚Ì‘¼‚ÌŽg‚¢•û
+â– ãã®ä»–ã®ä½¿ã„æ–¹
 
-@œÄ¶‚·‚é
+ã€€â—å†ç”Ÿã™ã‚‹
 
-@@ƒvƒŒƒCƒŠƒXƒgã‚Ì€–Ú‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚·‚é‚©A
-@@ƒvƒŒƒCƒŠƒXƒgã‚Ì€–Ú‚ð‰EƒNƒŠƒbƒN‚µ‚ÄuÄ¶v‚ð‘I‘ð‚·‚é‚©A
-@@ƒvƒŒƒCƒŠƒXƒgã‚Ì€–Ú‚ð‘I‘ð‚µ‚ÄƒXƒy[ƒXƒL[‚ð‰Ÿ‚·‚©A
-@@ƒXƒNƒŠ[ƒ“¶‰º‚ÌÄ¶ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚Ä‰º‚³‚¢B
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šã®é …ç›®ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã‹ã€
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šã®é …ç›®ã‚’å³ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€Œå†ç”Ÿã€ã‚’é¸æŠžã™ã‚‹ã‹ã€
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šã®é …ç›®ã‚’é¸æŠžã—ã¦ã‚¹ãƒšãƒ¼ã‚¹ã‚­ãƒ¼ã‚’æŠ¼ã™ã‹ã€
+ã€€ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³å·¦ä¸‹ã®å†ç”Ÿãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„ã€‚
 
-@œÄ¶ˆÊ’u‚ð•ÏX‚·‚é
+ã€€â—å†ç”Ÿä½ç½®ã‚’å¤‰æ›´ã™ã‚‹
 
-@@ƒXƒNƒŠ[ƒ“‰º‚ÌƒV[ƒNƒo[‚ð‘€ì‚µ‚Ä‰º‚³‚¢B
-@@(‰¹Šy‚ÍƒV[ƒNo—ˆ‚Ü‚¹‚ñ)
+ã€€ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ä¸‹ã®ã‚·ãƒ¼ã‚¯ãƒãƒ¼ã‚’æ“ä½œã—ã¦ä¸‹ã•ã„ã€‚
+ã€€ã€€(éŸ³æ¥½ã¯ã‚·ãƒ¼ã‚¯å‡ºæ¥ã¾ã›ã‚“)
 
-@œ‰¹—Ê‚ð’²®‚·‚é
+ã€€â—éŸ³é‡ã‚’èª¿æ•´ã™ã‚‹
 
-@@ƒXƒNƒŠ[ƒ“‰E‰º‚ÌƒQ[ƒW‚Å’²®o—ˆ‚Ü‚·B
-@@(“®‰æ‚Æ‰¹Šy‚Å‰ÁŒ¸‚ªˆÙ‚È‚é‚Æ‚¢‚¤–â‘è‚ª‚ ‚è‚Ü‚·)
+ã€€ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³å³ä¸‹ã®ã‚²ãƒ¼ã‚¸ã§èª¿æ•´å‡ºæ¥ã¾ã™ã€‚
+ã€€ã€€(å‹•ç”»ã¨éŸ³æ¥½ã§åŠ æ¸›ãŒç•°ãªã‚‹ã¨ã„ã†å•é¡ŒãŒã‚ã‚Šã¾ã™)
 
-@œƒXƒNƒŠ[ƒ“‚ð‘S‰æ–Ê•\Ž¦‚É‚·‚é
+ã€€â—ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã‚’å…¨ç”»é¢è¡¨ç¤ºã«ã™ã‚‹
 
-@@ƒXƒNƒŠ[ƒ“‰Eã‚Ì‰©F‚¢ƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚©AƒXƒNƒŠ[ƒ“’†‰›‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚Ä‰º‚³‚¢B
+ã€€ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³å³ä¸Šã®é»„è‰²ã„ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã‹ã€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ä¸­å¤®ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ä¸‹ã•ã„ã€‚
 
-@œƒXƒNƒŠ[ƒ“‚ÌƒTƒCƒY‚ð•ÏX‚·‚é
+ã€€â—ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã®ã‚µã‚¤ã‚ºã‚’å¤‰æ›´ã™ã‚‹
 
-@@ƒXƒNƒŠ[ƒ“‚Ì’[‚ðƒhƒ‰ƒbƒO‚µ‚Ä’²®‚·‚é‚©A
-@@ƒvƒŒƒCƒŠƒXƒgã•”ƒƒjƒ…[‚ÌAƒXƒNƒŠ[ƒ“(S) / ƒTƒCƒY•ÏX(S) –”‚ÍAƒTƒCƒY(T) ‚©‚ç•ÏX‚·‚é‚©A
-	ƒvƒŒƒCƒŠƒXƒgã•”ƒƒjƒ…[‚ÌAƒXƒNƒŠ[ƒ“(S) / ƒTƒCƒY(T) ‚©‚ç“K“–‚ÈƒTƒCƒY‚ð‘I‚ñ‚Å‰º‚³‚¢B
+ã€€ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ã®ç«¯ã‚’ãƒ‰ãƒ©ãƒƒã‚°ã—ã¦èª¿æ•´ã™ã‚‹ã‹ã€
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šéƒ¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³(S) / ã‚µã‚¤ã‚ºå¤‰æ›´(S) åˆã¯ã€ã‚µã‚¤ã‚º(T) ã‹ã‚‰å¤‰æ›´ã™ã‚‹ã‹ã€
+	ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šéƒ¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³(S) / ã‚µã‚¤ã‚º(T) ã‹ã‚‰é©å½“ãªã‚µã‚¤ã‚ºã‚’é¸ã‚“ã§ä¸‹ã•ã„ã€‚
 
-@œƒvƒŒƒCƒŠƒXƒg‚ðƒtƒ@ƒCƒ‹‚É•Û‘¶‚·‚é
+ã€€â—ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆã‚’ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¿å­˜ã™ã‚‹
 
-@@ƒvƒŒƒCƒŠƒXƒgã•”ƒƒjƒ…[‚ÌAƒvƒŒƒCƒŠƒXƒg(L) / ƒtƒ@ƒCƒ‹‚É•Û‘¶(A) ‚©‚ç•Û‘¶‚µ‚Ä‰º‚³‚¢B
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šéƒ¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆ(L) / ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¿å­˜(A) ã‹ã‚‰ä¿å­˜ã—ã¦ä¸‹ã•ã„ã€‚
 
-@œƒvƒŒƒCƒŠƒXƒg‚ðƒtƒ@ƒCƒ‹‚©‚ç“Ç‚Ýž‚Þ
+ã€€â—ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆã‚’ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã‚€
 
-@@ƒvƒŒƒCƒŠƒXƒgã•”ƒƒjƒ…[‚ÌAƒvƒŒƒCƒŠƒXƒg(L) / ƒtƒ@ƒCƒ‹‚©‚ç“Ç‚Ýž‚Þ(A) ‚©‚ç“Ç‚Ýž‚ñ‚Å‰º‚³‚¢B
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆä¸Šéƒ¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆ(L) / ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰èª­ã¿è¾¼ã‚€(A) ã‹ã‚‰èª­ã¿è¾¼ã‚“ã§ä¸‹ã•ã„ã€‚
 
-@œI—¹‚·‚é
+ã€€â—çµ‚äº†ã™ã‚‹
 
-@@ƒvƒŒƒCƒŠƒXƒg‚ð•Â‚¶‚é‚©A
-@@ƒXƒNƒŠ[ƒ“‰Eã‚ÌÔ‚¢ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚Ä‰º‚³‚¢B
+ã€€ã€€ãƒ—ãƒ¬ã‚¤ãƒªã‚¹ãƒˆã‚’é–‰ã˜ã‚‹ã‹ã€
+ã€€ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³å³ä¸Šã®èµ¤ã„ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„ã€‚
 
 
-¡§ŒÀ
+â– åˆ¶é™
 
-@700 MB ‚ð’´‚¦‚é“®‰æE‰¹Šyƒtƒ@ƒCƒ‹‚Í“Ç‚Ýž‚ß‚Ü‚¹‚ñB
+ã€€700 MB ã‚’è¶…ãˆã‚‹å‹•ç”»ãƒ»éŸ³æ¥½ãƒ•ã‚¡ã‚¤ãƒ«ã¯èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã€‚
 
 
-¡•â‘«
+â– è£œè¶³
 
-@ƒƒOƒtƒ@ƒCƒ‹ Kirara.log, Kirara0.log ‚ÍA‡Œv‚¨‚æ‚» 2 MB ‚ð’´‚¦‚È‚¢‚æ‚¤‚ÉŠÇ—iŽ©“®“I‚Éíœj‚³‚ê‚Ü‚·B
+ã€€ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ« Kirara.log, Kirara0.log ã¯ã€åˆè¨ˆãŠã‚ˆã 2 MB ã‚’è¶…ãˆãªã„ã‚ˆã†ã«ç®¡ç†ï¼ˆè‡ªå‹•çš„ã«å‰Šé™¤ï¼‰ã•ã‚Œã¾ã™ã€‚
 
-@ƒXƒNƒŠ[ƒ“¶ã‚É‚¿‚å‚ë‚¿‚å‚ëo‚é•¶Žš‚ÍA
-@Ý’è(S) / ƒXƒNƒŠ[ƒ“ / ƒCƒ“ƒXƒ^ƒ“ƒgEƒƒbƒZ[ƒW‚ð•\Ž¦‚µ‚È‚¢B‚Ìƒ`ƒFƒbƒN‚ðŠO‚·‚ÆÁ‚¦‚Ü‚·B
+ã€€ã‚¹ã‚¯ãƒªãƒ¼ãƒ³å·¦ä¸Šã«ã¡ã‚‡ã‚ã¡ã‚‡ã‚å‡ºã‚‹æ–‡å­—ã¯ã€
+ã€€è¨­å®š(S) / ã‚¹ã‚¯ãƒªãƒ¼ãƒ³ / ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ãƒˆãƒ»ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã—ãªã„ã€‚ã®ãƒã‚§ãƒƒã‚¯ã‚’å¤–ã™ã¨æ¶ˆãˆã¾ã™ã€‚
 
 
-¡‘fÞ’ñ‹ŸiŒhÌ—ªj
+â– ç´ ææä¾›ï¼ˆæ•¬ç§°ç•¥ï¼‰
 
-@‚Ï‚­‚½‚»
-@https://www.pakutaso.com/
+ã€€ã±ããŸã
+ã€€https://www.pakutaso.com/
 
 
-¡Žæ‚èˆµ‚¢Ží•Ê
+â– å–ã‚Šæ‰±ã„ç¨®åˆ¥
 
-@ƒtƒŠ[ƒ\ƒtƒg
+ã€€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆ
 
 
-¡ìŽÒ‚Ö‚Ì˜A—æ
+â– ä½œè€…ã¸ã®é€£çµ¡å…ˆ
 
-@stackprobes@gmail.com
+ã€€stackprobes@gmail.com
 
-@ƒoƒO‚â—v–]‚È‚Ç‚²˜A—‚­‚¾‚³‚¢B
+ã€€ãƒã‚°ã‚„è¦æœ›ãªã©ã”é€£çµ¡ãã ã•ã„ã€‚
 
