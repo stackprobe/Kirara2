@@ -71,6 +71,27 @@ void updateFindData(char *path)
 
 // ----
 
+// sync > @ My_mkdir
+
+static int My_mkdir(char *dir) // ret: ? é∏îs
+{
+	for(int c = 1; ; c++)
+	{
+		if(_mkdir(dir) == 0) // ? ê¨å˜
+			return 0;
+
+		cout("Failed _mkdir \"%s\", %d-th trial. LastError: %08x\n", dir, c, GetLastError());
+
+		if(10 <= c)
+			break;
+
+		Sleep(100);
+	}
+	return 1;
+}
+
+// < sync
+
 int accessible(char *path)
 {
 	return !_access(path, 0);
@@ -87,7 +108,7 @@ char *refLocalPath(char *path)
 void createDir(char *dir)
 {
 	errorCase(m_isEmpty(dir));
-	errorCase(_mkdir(dir)); // ? é∏îs
+	errorCase(My_mkdir(dir)); // ? é∏îs
 }
 void deleteDir(char *dir)
 {
