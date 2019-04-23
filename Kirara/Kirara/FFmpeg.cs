@@ -104,37 +104,14 @@ namespace Charlotte
 			if (Environment.Is64BitOperatingSystem == false) // ? OS == 32-bit
 				description = description.Replace("64", "32");
 
-			//FolderBrowserDialogクラスのインスタンスを作成
-			using (FolderBrowserDialog fbd = new FolderBrowserDialog())
+			if (SaveLoadDialogs.SelectFolder(ref Gnd.i.ffmpegDir, description, dlg =>
 			{
-				//上部に表示する説明テキストを指定する
-				fbd.Description = description;
-				//ルートフォルダを指定する
-				//デフォルトでDesktop
-				//fbd.RootFolder = Environment.SpecialFolder.Desktop;
-				fbd.RootFolder = Environment.SpecialFolder.MyComputer;
-				//最初に選択するフォルダを指定する
-				//RootFolder以下にあるフォルダである必要がある
-				//fbd.SelectedPath = @"C:\Windows";
-				fbd.SelectedPath = Gnd.i.ffmpegDir;
-				//ユーザーが新しいフォルダを作成できるようにする
-				//デフォルトでTrue
-				fbd.ShowNewFolderButton = false;
-
-				//ダイアログを表示する
-				if (fbd.ShowDialog() == DialogResult.OK)
-				{
-					//選択されたフォルダを表示する
-					//Console.WriteLine(fbd.SelectedPath);
-
-					{
-						string dir = fbd.SelectedPath;
-
-						dir = FileTools.toFullPath(dir);
-
-						Gnd.i.ffmpegDir = dir;
-					}
-				}
+				dlg.RootFolder = Environment.SpecialFolder.MyComputer;
+				dlg.ShowNewFolderButton = false;
+			}
+			))
+			{
+				Gnd.i.ffmpegDir = FileTools.toFullPath(Gnd.i.ffmpegDir);
 			}
 		}
 	}

@@ -947,55 +947,21 @@ namespace Charlotte
 					initLFile = Path.GetFileName(Gnd.i.lastPlayListFile);
 				}
 
-				//SaveFileDialogクラスのインスタンスを作成
-				using (SaveFileDialog sfd = new SaveFileDialog())
+				string plFile = SaveLoadDialogs.SaveFile("プレイリストの保存先を選択してください", "きららプレイリスト:krrpl", initDir, initLFile);
+
+				if (plFile != null)
 				{
-					//はじめのファイル名を指定する
-					//はじめに「ファイル名」で表示される文字列を指定する
-					//sfd.FileName = "きららプレイリスト.krrpl";
-					sfd.FileName = initLFile;
-					//はじめに表示されるフォルダを指定する
-					//sfd.InitialDirectory = @"C:\";
-					//sfd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-					sfd.InitialDirectory = initDir;
-					//[ファイルの種類]に表示される選択肢を指定する
-					//指定しない（空の文字列）の時は、現在のディレクトリが表示される
-					//sfd.Filter = "HTMLファイル(*.html;*.htm)|*.html;*.htm|すべてのファイル(*.*)|*.*";
-					sfd.Filter = "きららプレイリスト(*.krrpl)|*.krrpl|すべてのファイル(*.*)|*.*";
-					//[ファイルの種類]ではじめに選択されるものを指定する
-					//2番目の「すべてのファイル」が選択されているようにする
-					//sfd.FilterIndex = 2;
-					sfd.FilterIndex = 1;
-					//タイトルを設定する
-					sfd.Title = "プレイリストの保存先を選択してください";
-					//ダイアログボックスを閉じる前に現在のディレクトリを復元するようにする
-					sfd.RestoreDirectory = true;
-					//既に存在するファイル名を指定したとき警告する
-					//デフォルトでTrueなので指定する必要はない
-					sfd.OverwritePrompt = true;
-					//存在しないパスが指定されたとき警告を表示する
-					//デフォルトでTrueなので指定する必要はない
-					sfd.CheckPathExists = true;
+					plFile = FileTools.toFullPath(plFile);
+					Gnd.i.lastPlayListFile = plFile;
 
-					//ダイアログを表示する
-					if (sfd.ShowDialog() == DialogResult.OK)
-					{
-						//OKボタンがクリックされたとき、選択されたファイル名を表示する
-						//Console.WriteLine(sfd.FileName);
+					File.WriteAllLines(plFile, pl, Encoding.UTF8);
 
-						string plFile = sfd.FileName;
-						plFile = FileTools.toFullPath(plFile);
-						Gnd.i.lastPlayListFile = plFile;
-
-						File.WriteAllLines(plFile, pl, Encoding.UTF8);
-
-						MessageBox.Show(
-							"プレイリストを保存しました。",
-							"情報",
-							MessageBoxButtons.OK,
-							MessageBoxIcon.Information
-							);
-					}
+					MessageBox.Show(
+						"プレイリストを保存しました。",
+						"情報",
+						MessageBoxButtons.OK,
+						MessageBoxIcon.Information
+						);
 				}
 			}
 			catch (Exception ex)
@@ -1022,65 +988,30 @@ namespace Charlotte
 					initLFile = Path.GetFileName(Gnd.i.lastPlayListFile);
 				}
 
-				//OpenFileDialogクラスのインスタンスを作成
-				using (OpenFileDialog ofd = new OpenFileDialog())
+				string plFile = SaveLoadDialogs.LoadFile("開くプレイリスト・ファイルを選択してください", "きららプレイリスト:krrpl", initDir, initLFile);
+
+				if (plFile != null)
 				{
-					//はじめのファイル名を指定する
-					//はじめに「ファイル名」で表示される文字列を指定する
-					//ofd.FileName = "きららプレイリスト.krrpl";
-					ofd.FileName = initLFile;
-					//はじめに表示されるフォルダを指定する
-					//指定しない（空の文字列）の時は、現在のディレクトリが表示される
-					//ofd.InitialDirectory = @"C:\";
-					//ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-					ofd.InitialDirectory = initDir;
-					//[ファイルの種類]に表示される選択肢を指定する
-					//指定しないとすべてのファイルが表示される
-					//ofd.Filter = "HTMLファイル(*.html;*.htm)|*.html;*.htm|すべてのファイル(*.*)|*.*";
-					ofd.Filter = "きららプレイリスト(*.krrpl)|*.krrpl|すべてのファイル(*.*)|*.*";
-					//[ファイルの種類]ではじめに選択されるものを指定する
-					//2番目の「すべてのファイル」が選択されているようにする
-					//ofd.FilterIndex = 2;
-					ofd.FilterIndex = 1;
-					//タイトルを設定する
-					ofd.Title = "開くプレイリスト・ファイルを選択してください";
-					//ダイアログボックスを閉じる前に現在のディレクトリを復元するようにする
-					ofd.RestoreDirectory = true;
-					//存在しないファイルの名前が指定されたとき警告を表示する
-					//デフォルトでTrueなので指定する必要はない
-					ofd.CheckFileExists = true;
-					//存在しないパスが指定されたとき警告を表示する
-					//デフォルトでTrueなので指定する必要はない
-					ofd.CheckPathExists = true;
+					plFile = FileTools.toFullPath(plFile);
+					Gnd.i.lastPlayListFile = plFile;
 
-					//ダイアログを表示する
-					if (ofd.ShowDialog() == DialogResult.OK)
+					List<MediaInfo> mis = new List<MediaInfo>();
+
+					foreach (string file in FileTools.readAllLines(plFile, Encoding.UTF8))
 					{
-						//OKボタンがクリックされたとき、選択されたファイル名を表示する
-						//Console.WriteLine(ofd.FileName);
+						if (
+							file != "" &&
+							file[0] != ';'
+							)
+							mis.Add(MediaInfo.create(file));
+					}
+					int startPos = plSheet.RowCount;
 
-						string plFile = ofd.FileName;
-						plFile = FileTools.toFullPath(plFile);
-						Gnd.i.lastPlayListFile = plFile;
+					plSheet.RowCount += mis.Count;
 
-						List<MediaInfo> mis = new List<MediaInfo>();
-
-						foreach (string file in FileTools.readAllLines(plFile, Encoding.UTF8))
-						{
-							if (
-								file != "" &&
-								file[0] != ';'
-								)
-								mis.Add(MediaInfo.create(file));
-						}
-						int startPos = plSheet.RowCount;
-
-						plSheet.RowCount += mis.Count;
-
-						for (int index = 0; index < mis.Count; index++)
-						{
-							plSheetSetRow(startPos + index, mis[index]);
-						}
+					for (int index = 0; index < mis.Count; index++)
+					{
+						plSheetSetRow(startPos + index, mis[index]);
 					}
 				}
 			}
