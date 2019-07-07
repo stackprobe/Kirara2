@@ -98,6 +98,9 @@ namespace Charlotte
 		public bool instantMessagesDisabled = false;
 		public bool reportToLogDisabled = true;
 		public bool convBypassまとめて実行 = false;
+		public bool doubleMovie = false;
+		public int doubleMovie_darknessPct = 30; // 0 ～ 100
+		public int doubleMovie_bokashiLevel = 30; // 0 ～ 100
 
 		public void loadData()
 		{
@@ -132,6 +135,9 @@ namespace Charlotte
 				instantMessagesDisabled = StringTools.toFlag(lines[c++]);
 				reportToLogDisabled = StringTools.toFlag(lines[c++]);
 				convBypassまとめて実行 = StringTools.toFlag(lines[c++]);
+				doubleMovie = StringTools.toFlag(lines[c++]);
+				doubleMovie_darknessPct = int.Parse(lines[c++]);
+				doubleMovie_bokashiLevel = int.Parse(lines[c++]);
 
 				// < items
 			}
@@ -171,6 +177,9 @@ namespace Charlotte
 				lines.Add(StringTools.toString(instantMessagesDisabled));
 				lines.Add(StringTools.toString(reportToLogDisabled));
 				lines.Add(StringTools.toString(convBypassまとめて実行));
+				lines.Add(StringTools.toString(doubleMovie));
+				lines.Add("" + doubleMovie_darknessPct);
+				lines.Add("" + doubleMovie_bokashiLevel);
 
 				// < items
 

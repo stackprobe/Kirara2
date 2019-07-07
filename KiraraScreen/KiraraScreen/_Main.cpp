@@ -12,6 +12,9 @@ static int Param_StartTime;
 static int Param_MediaTime;
 static int Param_Left;
 static int Param_Top;
+static int Param_DoubleMovie;
+static int Param_DoubleMovie_DarknessPct = 30;
+static int Param_DoubleMovie_BokashiLevel = 30;
 
 // ---- movie ----
 
@@ -24,6 +27,10 @@ static int Movie_L;
 static int Movie_T;
 static int Movie_W = MOVIE_W_MIN;
 static int Movie_H = MOVIE_H_MIN;
+static int BackMovie_L;
+static int BackMovie_T;
+static int BackMovie_W = MOVIE_W_MIN;
+static int BackMovie_H = MOVIE_H_MIN;
 static char *File; // null ng
 static int MovieHdl = -1; // -1 == 未再生
 
@@ -126,11 +133,63 @@ static void SetMovie_LTWH(void)
 
 	Movie_L = (Gnd.RealScreen_W - Movie_W) / 2;
 	Movie_T = (Gnd.RealScreen_H - Movie_H) / 2;
+
+	// ----
+
+	BackMovie_W = Gnd.RealScreen_W;
+	BackMovie_H = (Height * Gnd.RealScreen_W) / Width;
+
+	if(BackMovie_H < Gnd.RealScreen_H)
+	{
+		BackMovie_W = (Width * Gnd.RealScreen_H) / Height;
+		BackMovie_H = Gnd.RealScreen_H;
+
+		errorCase(BackMovie_W < Gnd.RealScreen_W); // 有り得ない。
+	}
+	m_maxim(BackMovie_W, MOVIE_W_MIN);
+	m_maxim(BackMovie_H, MOVIE_H_MIN);
+
+	BackMovie_L = (Gnd.RealScreen_W - BackMovie_W) / 2;
+	BackMovie_T = (Gnd.RealScreen_H - BackMovie_H) / 2;
 }
 static void MovieDraw(void)
 {
 	if(MovieHdl != -1)
 	{
+		if(Param_DoubleMovie)
+		{
+			static int scr = -1;
+			static int scr_w = -1;
+			static int scr_h = -1;
+
+			if(scr != -1 && (scr_w != BackMovie_W || scr_h != BackMovie_H))
+			{
+				DeleteGraph(scr);
+				scr = -1;
+			}
+			if(scr == -1)
+			{
+				scr_w = BackMovie_W;
+				scr_h = BackMovie_H;
+				scr = MakeScreen(scr_w, scr_h);
+				errorCase(scr == -1);
+			}
+			SetDrawScreen(scr);
+
+			DrawExtendGraph(0, 0, BackMovie_W, BackMovie_H, MovieHdl, FALSE);
+			GraphFilter(scr, DX_GRAPH_FILTER_GAUSS, 16,
+//				3000 // old
+				100 * Param_DoubleMovie_BokashiLevel
+				);
+
+			SetDrawScreen(DX_SCREEN_BACK); // 復元
+
+			DrawExtendGraph(BackMovie_L, BackMovie_T, BackMovie_L + BackMovie_W, BackMovie_T + BackMovie_H, scr, FALSE);
+			DrawCurtain(
+//				-0.3 // old
+				Param_DoubleMovie_DarknessPct / -100.0
+				);
+		}
 		DrawExtendGraph(Movie_L, Movie_T, Movie_L + Movie_W, Movie_T + Movie_H, MovieHdl, FALSE);
 	}
 }
@@ -735,6 +794,23 @@ void ProcMain(void)
 
 			case 'Y':
 				Param_Top = atoi(message + 1);
+				break;
+
+			case 'd':
+				switch(message[1])
+				{
+				case 'F':
+					Param_DoubleMovie = message[2] - '0';
+					break;
+
+				case 'D':
+					Param_DoubleMovie_DarknessPct = atoi(message + 2);
+					break;
+
+				case 'B':
+					Param_DoubleMovie_BokashiLevel = atoi(message + 2);
+					break;
+				}
 				break;
 
 			case 'M': // 全画面表示用

@@ -65,6 +65,7 @@ namespace Charlotte
 			plSheetInit();
 			Gnd.i.client = new Client();
 			Gnd.i.client.x = closeWin;
+			refreshUI();
 			this.mtEnabled = true;
 		}
 
@@ -861,6 +862,9 @@ namespace Charlotte
 						{
 							Gnd.i.oc.add(delegate
 							{
+								if (this.WindowState != FormWindowState.Normal)
+									this.WindowState = FormWindowState.Normal;
+
 								this.Left = Gnd.i.retPlWin_l;
 								this.Top = Gnd.i.retPlWin_t;
 								this.Width = Gnd.i.retPlWin_w;
@@ -1241,6 +1245,21 @@ namespace Charlotte
 
 				return;
 			}
+		}
+
+		private void 映像を二重に表示するToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Gnd.i.doubleMovie = Gnd.i.doubleMovie == false;
+
+			if (Gnd.i.client != null)
+				Gnd.i.client.refreshDoubleMovie();
+
+			refreshUI();
+		}
+
+		private void refreshUI()
+		{
+			this.映像を二重に表示するToolStripMenuItem.Checked = Gnd.i.doubleMovie;
 		}
 	}
 }

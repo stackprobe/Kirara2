@@ -25,6 +25,11 @@ namespace Charlotte
 			cbConvWavMastering.Checked = Gnd.i.convWavMastering;
 			cbReportToLogDisabled.Checked = Gnd.i.reportToLogDisabled;
 			cbConvBypassまとめて実行.Checked = Gnd.i.convBypassまとめて実行;
+			cbDoubleMovie.Checked = Gnd.i.doubleMovie;
+			doubleMovie_darknessPct.Value = Gnd.i.doubleMovie_darknessPct;
+			doubleMovie_bokashiLevel.Value = Gnd.i.doubleMovie_bokashiLevel;
+
+			refreshUI();
 		}
 
 		private void saveData()
@@ -34,6 +39,9 @@ namespace Charlotte
 			Gnd.i.convWavMastering = cbConvWavMastering.Checked;
 			Gnd.i.reportToLogDisabled = cbReportToLogDisabled.Checked;
 			Gnd.i.convBypassまとめて実行 = cbConvBypassまとめて実行.Checked;
+			Gnd.i.doubleMovie = cbDoubleMovie.Checked;
+			Gnd.i.doubleMovie_darknessPct = (int)doubleMovie_darknessPct.Value;
+			Gnd.i.doubleMovie_bokashiLevel = (int)doubleMovie_bokashiLevel.Value;
 		}
 
 		private void SettingDlg_Load(object sender, EventArgs e)
@@ -65,6 +73,16 @@ namespace Charlotte
 		{
 			saveData();
 			this.Close();
+		}
+
+		private void refreshUI()
+		{
+			doubleMovieOption.Enabled = cbDoubleMovie.Checked;
+		}
+
+		private void cbDoubleMovie_CheckedChanged(object sender, EventArgs e)
+		{
+			refreshUI();
 		}
 	}
 }

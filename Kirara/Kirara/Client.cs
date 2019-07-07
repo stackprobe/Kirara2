@@ -404,6 +404,8 @@ namespace Charlotte
 
 				_n2w.sendLine("v" + Gnd.i.volume);
 
+				refreshDoubleMovie();
+
 				_n2w.sendLine("+"); // 壁紙表示
 				return;
 			}
@@ -451,6 +453,13 @@ namespace Charlotte
 				_n2w.sendLine("EX");
 				return;
 			}
+		}
+
+		public void refreshDoubleMovie()
+		{
+			_n2w.sendLine("dF" + (Gnd.i.doubleMovie ? 1 : 0));
+			_n2w.sendLine("dD" + Gnd.i.doubleMovie_darknessPct);
+			_n2w.sendLine("dB" + Gnd.i.doubleMovie_bokashiLevel);
 		}
 
 		// ----
