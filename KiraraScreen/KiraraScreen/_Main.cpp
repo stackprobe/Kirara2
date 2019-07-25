@@ -173,6 +173,10 @@ static void MovieDraw(void)
 				scr_h = BackMovie_H;
 				scr = MakeScreen(scr_w, scr_h);
 				errorCase(scr == -1);
+
+				// memo:
+				// MakeScreenで生成したハンドル(scr)はフルスクリーンからタスク切り替えで無効？になるっぽい。
+				// <--- ChangeWindowModeを使っていないので問題無いはず。。。
 			}
 			SetDrawScreen(scr);
 
