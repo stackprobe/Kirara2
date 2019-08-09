@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte.Tools
 {
-	public class DoubleTools
+	public static class DoubleTools
 	{
 		public static double toRange(double value, double minval, double maxval)
 		{

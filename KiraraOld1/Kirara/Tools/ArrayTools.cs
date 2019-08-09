@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte.Tools
 {
-	public class ArrayTools
+	public static class ArrayTools
 	{
 		public static bool contains<T>(T[] arr, T target, Comparison<T> comp)
 		{

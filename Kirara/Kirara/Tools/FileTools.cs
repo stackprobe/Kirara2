@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace Charlotte.Tools
 {
-	public class FileTools
+	public static class FileTools
 	{
 		public static void createFile(string file)
 		{

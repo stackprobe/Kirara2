@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte.Tools
 {
-	public class JString
+	public static class JString
 	{
 		public static string toJString(string str, bool okJpn, bool okRet, bool okTab, bool okSpc)
 		{

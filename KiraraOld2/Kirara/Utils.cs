@@ -7,7 +7,7 @@ using Charlotte.Tools;
 
 namespace Charlotte
 {
-	public class Utils
+	public static class Utils
 	{
 		private static int _index = 0;
 

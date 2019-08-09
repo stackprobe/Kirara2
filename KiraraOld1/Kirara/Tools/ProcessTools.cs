@@ -10,7 +10,7 @@ namespace Charlotte.Tools
 	/// <summary>
 	/// バッチなので、"%" -> "%%"
 	/// </summary>
-	public class ProcessTools
+	public static class ProcessTools
 	{
 		public static bool _終了を待っているプロセスを捨てて例外を投げろ = false;
 

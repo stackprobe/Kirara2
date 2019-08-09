@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte.Tools
 {
-	public class BinaryTools
+	public static class BinaryTools
 	{
 		public static Comparison<byte> comp = delegate(byte a, byte b)
 		{

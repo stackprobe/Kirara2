@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 namespace Charlotte
 {
-	public class FFmpeg
+	public static class FFmpeg
 	{
 		private static string _bDir;
 

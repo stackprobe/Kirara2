@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Charlotte
 {
-	public class Utils
+	public static class Utils
 	{
 		private static int _unqIndex = 0;
 

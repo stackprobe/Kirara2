@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Charlotte.Tools
 {
-	public class SecurityTools
+	public static class SecurityTools
 	{
 		private static object GCRB_SYNCROOT = new object();
 		private const int GCRB_BUFF_SIZE = 1024;

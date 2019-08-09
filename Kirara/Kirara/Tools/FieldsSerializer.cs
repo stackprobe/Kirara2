@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace Charlotte.Tools
 {
-	public class FieldsSerializer
+	public static class FieldsSerializer
 	{
 		public static string[] serialize(object src)
 		{

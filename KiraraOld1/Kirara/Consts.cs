@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte
 {
-	public class Consts
+	public static class Consts
 	{
 		public const string MEDIA_DIR_ID = "{80b5a52a-7cc7-4875-9980-452b0aa95fac}"; // shared_uuid
 

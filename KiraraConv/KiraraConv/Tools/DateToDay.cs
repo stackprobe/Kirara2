@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte.Tools
 {
-	public class DateToDay
+	public static class DateToDay
 	{
 		public static int toDay(int date)
 		{

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Charlotte.Tools
 {
-	public class ExtraTools
+	public static class ExtraTools
 	{
 		// add to here...
 	}

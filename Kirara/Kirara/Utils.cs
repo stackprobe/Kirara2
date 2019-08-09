@@ -9,7 +9,7 @@ using System.Reflection;
 
 namespace Charlotte
 {
-	public class Utils
+	public static class Utils
 	{
 		private static int _serial;
 

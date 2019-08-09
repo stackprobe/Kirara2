@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Charlotte.Tools
 {
-	public class CsvFile
+	public static class CsvFile
 	{
 		public class Reader : IDisposable
 		{
