@@ -24,10 +24,6 @@
 　Windows 10
 　確認していませんが Windows 7/8/8.1 でも動くかもしれません。
 
-　.NET Framework 4 を使用します。
-
-　DirectX 9.0 以降
-
 
 ■インストール方法
 
