@@ -124,7 +124,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 #if LOG_ENABLED // Œ®‚ÌŠm”F
 	{
-		char *b = na(char, 32);
+		char *b = na_(char, 32);
 		int s = 32;
 		aes128_decrypt_extend(b, s, 1);
 		memFree(b);
