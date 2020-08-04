@@ -16,7 +16,7 @@ namespace Charlotte
 			{
 				onBoot();
 
-				// clear TMP -- XXX 何か変だ..
+				// clear TMP -- HACK 何か変だ..
 				{
 					using (WorkingDir wd = new WorkingDir())
 					{ }
