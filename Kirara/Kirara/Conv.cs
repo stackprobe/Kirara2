@@ -238,7 +238,7 @@ namespace Charlotte
 					{
 						reportToLog(redirFile, StringTools.ENCODING_SJIS);
 
-						if (File.Exists(wavFileNew) == false) // ? 多分ノーマライズ不要だった。
+						if (File.Exists(wavFileNew) == false) // ? 音量の均一化 不要だった。
 						{
 							Gnd.i.logger.writeLine("wavFileNew <- wavFile");
 							wavFileNew = wavFile;

@@ -54,9 +54,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.doubleMovie_darknessPct)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.doubleMovie_bokashiLevel)).BeginInit();
 			this.SuspendLayout();
-			// 
+			//
 			// btnCancel
-			// 
+			//
 			this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnCancel.Location = new System.Drawing.Point(436, 476);
 			this.btnCancel.Name = "btnCancel";
@@ -65,9 +65,9 @@
 			this.btnCancel.Text = "キャンセル";
 			this.btnCancel.UseVisualStyleBackColor = true;
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-			// 
+			//
 			// btnOk
-			// 
+			//
 			this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnOk.Location = new System.Drawing.Point(329, 476);
 			this.btnOk.Name = "btnOk";
@@ -76,11 +76,11 @@
 			this.btnOk.Text = "OK";
 			this.btnOk.UseVisualStyleBackColor = true;
 			this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
-			// 
+			//
 			// tabControl1
-			// 
-			this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.tabControl1.Controls.Add(this.tabPage3);
 			this.tabControl1.Controls.Add(this.tabPage2);
@@ -90,9 +90,9 @@
 			this.tabControl1.SelectedIndex = 0;
 			this.tabControl1.Size = new System.Drawing.Size(525, 458);
 			this.tabControl1.TabIndex = 0;
-			// 
+			//
 			// tabPage3
-			// 
+			//
 			this.tabPage3.Controls.Add(this.doubleMovieOption);
 			this.tabPage3.Controls.Add(this.cbDoubleMovie);
 			this.tabPage3.Controls.Add(this.cbInstantMessagesDisabled);
@@ -102,9 +102,9 @@
 			this.tabPage3.TabIndex = 2;
 			this.tabPage3.Text = "スクリーン";
 			this.tabPage3.UseVisualStyleBackColor = true;
-			// 
+			//
 			// cbDoubleMovie
-			// 
+			//
 			this.cbDoubleMovie.AutoSize = true;
 			this.cbDoubleMovie.Location = new System.Drawing.Point(20, 50);
 			this.cbDoubleMovie.Name = "cbDoubleMovie";
@@ -113,9 +113,9 @@
 			this.cbDoubleMovie.Text = "映像を二重に表示して、余白の部分にも映像が表示されるようにする。";
 			this.cbDoubleMovie.UseVisualStyleBackColor = true;
 			this.cbDoubleMovie.CheckedChanged += new System.EventHandler(this.cbDoubleMovie_CheckedChanged);
-			// 
+			//
 			// cbInstantMessagesDisabled
-			// 
+			//
 			this.cbInstantMessagesDisabled.AutoSize = true;
 			this.cbInstantMessagesDisabled.Location = new System.Drawing.Point(20, 20);
 			this.cbInstantMessagesDisabled.Name = "cbInstantMessagesDisabled";
@@ -123,9 +123,9 @@
 			this.cbInstantMessagesDisabled.TabIndex = 0;
 			this.cbInstantMessagesDisabled.Text = "インスタント・メッセージを表示しない。";
 			this.cbInstantMessagesDisabled.UseVisualStyleBackColor = true;
-			// 
+			//
 			// tabPage2
-			// 
+			//
 			this.tabPage2.Controls.Add(this.cbConvBypassまとめて実行);
 			this.tabPage2.Controls.Add(this.cbAutoPlayTop);
 			this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -134,9 +134,9 @@
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "プレイリスト";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
+			//
 			// cbConvBypassまとめて実行
-			// 
+			//
 			this.cbConvBypassまとめて実行.AutoSize = true;
 			this.cbConvBypassまとめて実行.Location = new System.Drawing.Point(20, 50);
 			this.cbConvBypassまとめて実行.Name = "cbConvBypassまとめて実行";
@@ -144,9 +144,9 @@
 			this.cbConvBypassまとめて実行.TabIndex = 1;
 			this.cbConvBypassまとめて実行.Text = ".ogX のコンバートをまとめて実行する。";
 			this.cbConvBypassまとめて実行.UseVisualStyleBackColor = true;
-			// 
+			//
 			// cbAutoPlayTop
-			// 
+			//
 			this.cbAutoPlayTop.AutoSize = true;
 			this.cbAutoPlayTop.Location = new System.Drawing.Point(20, 20);
 			this.cbAutoPlayTop.Name = "cbAutoPlayTop";
@@ -154,9 +154,9 @@
 			this.cbAutoPlayTop.TabIndex = 0;
 			this.cbAutoPlayTop.Text = "最初のアイテムが再生可能になったら自動的に再生する。";
 			this.cbAutoPlayTop.UseVisualStyleBackColor = true;
-			// 
+			//
 			// tabPage1
-			// 
+			//
 			this.tabPage1.Controls.Add(this.cbReportToLogDisabled);
 			this.tabPage1.Controls.Add(this.cbConvWavMastering);
 			this.tabPage1.Location = new System.Drawing.Point(4, 29);
@@ -166,9 +166,9 @@
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "コンバート";
 			this.tabPage1.UseVisualStyleBackColor = true;
-			// 
+			//
 			// cbReportToLogDisabled
-			// 
+			//
 			this.cbReportToLogDisabled.AutoSize = true;
 			this.cbReportToLogDisabled.Location = new System.Drawing.Point(20, 50);
 			this.cbReportToLogDisabled.Name = "cbReportToLogDisabled";
@@ -176,19 +176,19 @@
 			this.cbReportToLogDisabled.TabIndex = 1;
 			this.cbReportToLogDisabled.Text = "コマンドの出力やレポートをログに書き出さない。";
 			this.cbReportToLogDisabled.UseVisualStyleBackColor = true;
-			// 
+			//
 			// cbConvWavMastering
-			// 
+			//
 			this.cbConvWavMastering.AutoSize = true;
 			this.cbConvWavMastering.Location = new System.Drawing.Point(20, 20);
 			this.cbConvWavMastering.Name = "cbConvWavMastering";
 			this.cbConvWavMastering.Size = new System.Drawing.Size(314, 24);
 			this.cbConvWavMastering.TabIndex = 0;
-			this.cbConvWavMastering.Text = "ついでに音量のノーマライズ（均一化）も行う。";
+			this.cbConvWavMastering.Text = "ついでに音量の均一化も行う。";
 			this.cbConvWavMastering.UseVisualStyleBackColor = true;
-			// 
+			//
 			// doubleMovieOption
-			// 
+			//
 			this.doubleMovieOption.Controls.Add(this.doubleMovie_bokashiLevel);
 			this.doubleMovieOption.Controls.Add(this.label2);
 			this.doubleMovieOption.Controls.Add(this.doubleMovie_darknessPct);
@@ -199,41 +199,41 @@
 			this.doubleMovieOption.TabIndex = 2;
 			this.doubleMovieOption.TabStop = false;
 			this.doubleMovieOption.Text = "背後の映像";
-			// 
+			//
 			// label1
-			// 
+			//
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point(20, 40);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(261, 20);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "背景の暗さ ( 0 ～ 100 : 明るい ～ 暗い ) :";
-			// 
+			//
 			// doubleMovie_darkness
-			// 
+			//
 			this.doubleMovie_darknessPct.Location = new System.Drawing.Point(313, 38);
 			this.doubleMovie_darknessPct.Name = "doubleMovie_darkness";
 			this.doubleMovie_darknessPct.Size = new System.Drawing.Size(70, 27);
 			this.doubleMovie_darknessPct.TabIndex = 1;
-			// 
+			//
 			// label2
-			// 
+			//
 			this.label2.AutoSize = true;
 			this.label2.Location = new System.Drawing.Point(20, 80);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(287, 20);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "ぼかしレベル ( 0 ～ 100 : ぼかし無し ～ 強 ) :";
-			// 
+			//
 			// doubleMovie_bokashiLevel
-			// 
+			//
 			this.doubleMovie_bokashiLevel.Location = new System.Drawing.Point(313, 78);
 			this.doubleMovie_bokashiLevel.Name = "doubleMovie_bokashiLevel";
 			this.doubleMovie_bokashiLevel.Size = new System.Drawing.Size(70, 27);
 			this.doubleMovie_bokashiLevel.TabIndex = 3;
-			// 
+			//
 			// SettingDlg
-			// 
+			//
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(549, 527);
