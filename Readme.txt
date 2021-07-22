@@ -7,7 +7,7 @@
 ビルド済み配布物
 ----------------
 
-http://stackprobe.dip.jp/Kirara
+http://stackprobe.ccsp.mydns.jp/Kirara
 
 
 マニュアル
